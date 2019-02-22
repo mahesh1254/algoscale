@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <title>Form</title>
+    </head>
+    <body>
+          <div class="form_wrapper">
+                  <div class="form_container">
+                    <div class="title_container">
+                      <h2>Responsive Registration Form</h2>
+                    </div>
+                    <div class="row clearfix">
+                      <div class="">
+                        <form action="view.html" method="GET">
+
+                          <div class="input_field">
+                            <input id="unique-id" type="text"/>
+                          </div>
+                            <div class="input_field select_option">
+                                <select id="myOption" onchange="myFunction_IP();">
+                                  
+                        <option>Interview Purpose</option>
+                        <option value="visa">Visa</option>
+                        <option value="Permanent residence">Permanent residence</option>
+                                
+                        </select>
+                        <div class="select_arrow"></div>
+
+                      </div>
+                      
+                        <div class="input_field select_option">
+                            <select id="mySelect" onchange="yesnoCheck(that);">
+                              <option>Select a City</option>
+                              <option value= "London">London</option>
+                              <option value="Brighton">Brighton</option>
+                              <option value="Belfast">Belfast</option>
+                              <option value="Cardiff">Cardiff</option>
+                              <option value="Newcastle">Newcastle</option>
+                              <option value="Elsewhere">Elsewhere</option>
+                            </select>
+                            <div class="select_arrow"></div>
+                            <div id="ifYes" style="display: none;">
+                                <label for="city">City</label>
+                               <input type="text" id="city" name="city" /><br />
+                               
+                            </div>
+                        </div>
+                        <div class="input_field" id= "adr" > <span><i aria-hidden="true" class="fa fa-address-card-o"></i></span>
+                          <input type="adr" name="adr" placeholder="Address" required />
+                        </div>
+
+                            <div class="input_field" id= "interviewer"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                              <input type="text" name="interviewer" placeholder="Interviewer Name" required />
+                            </div>
+                            <div class="input_field" id= "interviewee"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                              <input type="text" name="interviewee" placeholder="Interviewee Name" required />
+                            </div>
+                            
+                          <div class="input_field" id= "email"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="email" name="email" placeholder="Email" required />
+                          </div>
+                                 
+                          <div class="input_field" id= "tel"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+                            <input type="tel" name="tel" placeholder="phone number" required />
+                          </div>
+                          <input type="date" id="datepicker">
+
+                            <div class="input_field checkbox_option">
+                                <input type="checkbox" id="cb1">
+                                <label for="cb1">I agree with terms and conditions</label>
+                            </div>
+                            
+                          <input class="button" type="submit" value="Register" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bundled/main.js"></script>
+    <script>
+          (function() {
+            // $("#datepicker").datepicker();
+          })();
+    </script>
+    </body>
+    </html>
